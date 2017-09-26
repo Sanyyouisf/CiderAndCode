@@ -15,8 +15,9 @@
                     NumberOfBushels: bushel.numberOfBushels,
                     UserId: bushel.userId
                 })
-            .then(result => console.log(result))
-            .catch(error => console.log(error));
+            .then(result => console.log("result apple created",result))
+            .catch(error => console.log("error : ",error));
     };
+
 
 }]);

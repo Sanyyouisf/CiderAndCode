@@ -1,0 +1,24 @@
+﻿<div>
+    <h2>list of bushels</h2>
+    <div ng-repeat="bushel in SanyBushels"> 
+        
+        <label for=" typeofapple">type of apple </label>
+        <input id=" typeofapple" type="text" ng-model="bushel.AppleType" disabled/>    
+       
+        <label for=" bushelquantity">quantity of bushels </label>
+        <input id="bushelquantity" type="text" ng-model="bushel.BushelQuantity"/>
+
+        <label for="pressed">Pressed </label>
+        <input id="pressed" type="checkbox" ng-checked="bushel.Pressed" disabled/>
+        
+        <label for="ripe">Ripe </label>
+        <input id="ripe" type="checkbox" ng-checked="bushel.Ripe" dis/>
+
+        <span >{{bushel.User}}</span>
+        
+        <button ng-click="StealApples(bushel.Id)">Steal Bushel</button>
+    </div>
+</div>
+
+
+
