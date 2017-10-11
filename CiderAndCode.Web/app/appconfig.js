@@ -9,5 +9,10 @@
         {
             templateUrl: "/app/views/Bushels/ListBushels.html",
             controller: "ListBushelsController"
+        })
+        .when("/ListCiders",
+        {
+            templateUrl: "/app/views/Ciders/ListCiders.html",
+            controller: "ListCidersController"
         });
 }]);

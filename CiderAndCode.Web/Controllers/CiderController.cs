@@ -8,10 +8,11 @@ using CiderAndCode.Web.DataModels;
 
 namespace CiderAndCode.Web.Controllers
 {
-    [RoutePrefix("api/cider")]
+  
+    [RoutePrefix("api/Cider")]
     public class CiderController : ApiController
     {
-        [Route(""), HttpPost]
+        [Route("AddCider"), HttpPost]
         public HttpResponseMessage MakeCider(MakeCiderRequest makeCiderRequest)
         {
             var db = new AppDbContext();
@@ -30,7 +31,7 @@ namespace CiderAndCode.Web.Controllers
             bushel.Pressed = true;
 
             var newCider = new Cider
-            {
+            {   
                 Type = bushel.Type,
                 Bushel = bushel,
                 DatePressed = DateTime.Now,

@@ -14,5 +14,6 @@ namespace CiderAndCode.Web.DataModels
         public virtual Bushel Bushel { get; set; }
         public bool Filtered { get; set; }
         public int NumberOfGallons { get; set; }
+        public virtual User User { get; set; }
     }
 }
